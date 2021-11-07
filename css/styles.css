@@ -17,6 +17,35 @@ body {
   line-height: 1.14;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* List style */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
 /*logo*/
 .logo {
   color: var(--accent-color);
@@ -33,11 +62,6 @@ body {
 
 .logo-footer {
   color: var(--primary-white-color);
-}
-
-/* List style */
-.list {
-  list-style: none;
 }
 
 /*site-nav*/
@@ -77,9 +101,12 @@ body {
 /* Hero */
 .hero {
   text-align: center;
+  /* background-color: #757575; */
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -91,6 +118,9 @@ body {
 
 /* Button */
 .button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -118,7 +148,14 @@ body {
 }
 
 /* Section */
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
@@ -126,26 +163,42 @@ body {
 }
 
 .section-description {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--text-color);
   line-height: 1.71;
 }
 
 /* Feature */
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 /* Our team */
+.command {
+  background-color: var(--filters-background-color);
+}
+.command .photo {
+  margin-bottom: 30px;
+}
 .command .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  /* text-align: center; */
 }
 
 .command .description {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.19;
+  /* text-align: center; */
 }
 
 /* Address footer */
