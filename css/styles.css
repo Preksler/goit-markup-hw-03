@@ -46,10 +46,14 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 
 /* -------------------------HEADER------------------------- */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* ----------logo---------- */
 .logo {
   color: var(--accent-color);
@@ -62,7 +66,6 @@ body {
 
 .logo-header {
   color: var(--primery-black-color);
-  margin-right: 93px;
 }
 
 .logo-footer {
@@ -70,6 +73,7 @@ body {
 }
 
 /* ----------site-nav---------- */
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -77,6 +81,7 @@ body {
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -184,7 +189,8 @@ body {
   background-color: var(--accent-color);
 }
 
-/* Section */
+/* -------------------------SECTION------------------------- */
+
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -209,27 +215,55 @@ body {
 
 /* -------------------------FEATURE------------------------- */
 
+.feature-list {
+  display: flex;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
+/* -------------------------WORK LIST------------------------- */
+
+.work-list {
+  display: flex;
+}
+
+.work-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* -------------------------OUR TEAM------------------------- */
 
-.command {
+.team {
   background-color: var(--third-bg-color);
 }
+
+.command {
+  display: flex;
+}
+
+.command .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .command .photo {
   margin-bottom: 30px;
 }
+
 .command .title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .command .description {
@@ -238,7 +272,7 @@ body {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
+  text-align: center;
 }
 
 /* -------------------------FOOTER------------------------- */
@@ -247,6 +281,9 @@ body {
   background-color: var(--second-bg-color);
 }
 
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .address .link {
   color: var(--text-footer-contact-color);
   font-style: normal;
