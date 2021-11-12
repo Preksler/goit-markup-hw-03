@@ -247,6 +247,7 @@ body {
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -297,8 +298,9 @@ body {
   margin-right: 30px;
 }
 
-.command .photo {
-  margin-bottom: 30px;
+.team-card-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .command .title {
